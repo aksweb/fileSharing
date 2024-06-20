@@ -8,7 +8,7 @@ export const uploadController = async (req, res) => {
     }
     try {
         const file = await File.create(fileObj);
-        return res.status(200).json({ path: `http://localhost:8000/file/${file._id}` });
+        return res.status(200).json({ path: `https://filesharing-79vc.onrender.com/file/${file._id}` });
 
     } catch (err) {
         console.log("creating object err: ", err);
